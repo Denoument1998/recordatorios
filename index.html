@@ -172,7 +172,7 @@
 <body>
 <main>
   <header>
-    <img class="avatar" id="avatar" src="foto.jpg" alt="" onerror="this.style.visibility='hidden'">
+    <img class="avatar" id="avatar" src="avatar.png" alt="" onerror="this.style.visibility='hidden'">
     <div>
       <h1 id="hello">Hoy</h1>
       <p class="date" id="date"></p>
@@ -939,7 +939,7 @@
     $('quote').textContent = quoteOfDay();
     $('factDay').textContent = '💡 Dato curioso: ' + factOfDay();
     const av = $('avatar');
-    if (av) av.src = state.settings.photo || 'foto.jpg';
+    if (av) av.src = state.settings.photo || 'avatar.png';
 
     const list = tasks();
     const done = list.filter(t => t.done).length;
